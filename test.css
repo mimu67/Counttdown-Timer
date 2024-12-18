@@ -1,0 +1,66 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(45deg, #ff5f6d, #ffc3a0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .timer-container {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  h1 {
+    font-size: 2.5em;
+    color: #ff6347;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+  }
+  
+  .timer {
+    font-size: 4em;
+    font-weight: bold;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    animation: glow 1.5s infinite alternate;
+  }
+  
+  .time-unit {
+    padding: 20px;
+    background: linear-gradient(45deg, #ff6347, #ffcc00);
+    border-radius: 10px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    color: white;
+    font-size: 2.5em;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+  }
+  
+  p {
+    font-size: 1.5em;
+    color: #444;
+    margin-top: 10px;
+  }
+  
+  @keyframes glow {
+    0% {
+      text-shadow: 0 0 5px #ff6347, 0 0 10px #ff6347, 0 0 15px #ff6347, 0 0 20px #ff6347, 0 0 25px #ff6347;
+    }
+    100% {
+      text-shadow: 0 0 10px #ff6347, 0 0 20px #ff6347, 0 0 30px #ff6347, 0 0 40px #ff6347, 0 0 50px #ff6347;
+    }
+  };
